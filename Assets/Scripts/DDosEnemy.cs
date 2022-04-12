@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class DDosEnemy : Enemy
 {
+
+
     void Start()
     {
-        speed = 10;
+        //speed = 10;
     }
 
     void Update()
     {
+
     }
 }

@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
         Vector2 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
-        if (Vector2.Distance(transform.position, target.position) <= 0.001f)
+        if (Vector2.Distance(transform.position, target.position) <= 0.1f)
         {
             GetNextWaypoint();
         }

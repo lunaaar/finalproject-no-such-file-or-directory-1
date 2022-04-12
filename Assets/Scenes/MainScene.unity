@@ -9220,7 +9220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc5663b1f55db84a85f74899e3ef56a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ddosEnemyPrefab: {fileID: 2461797303371974259, guid: 95e7855065a92824ca2c625f79f692da, type: 3}
+  ddosEnemyPrefab: {fileID: 6561787672442633517, guid: 303df4a0ee41aab4d920ad828b16239f, type: 3}
   trojanPrefab: {fileID: 0}
   networkPrefab: {fileID: 0}
   polymorphicPrefab: {fileID: 0}
