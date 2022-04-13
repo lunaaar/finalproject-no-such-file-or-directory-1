@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2461797303371974260}
   - component: {fileID: 2461797303371974259}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: DdosEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 8826578892466304754, guid: bbf3198d49a135446b661735ca2674fe, type: 3}
-  m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
