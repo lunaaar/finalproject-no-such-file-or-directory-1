@@ -28,8 +28,6 @@ public class WaveSpawner : MonoBehaviour
     private void Awake()
     {
         currentRound = 1;
-        countdown = 4f;
-        timeBetweenWaves = 5f;
     }
 
     void Update()
