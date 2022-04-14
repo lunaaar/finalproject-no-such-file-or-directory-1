@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3180554679069737021}
   - component: {fileID: 1452332464842035618}
-  - component: {fileID: 4766957520285047278}
-  - component: {fileID: 4766957520285047273}
+  - component: {fileID: 6809466913601276237}
+  - component: {fileID: 1692382443263053266}
   m_Layer: 0
   m_Name: DdosEnemy
   m_TagString: Enemy
@@ -84,7 +84,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4766957520285047278
+--- !u!114 &6809466913601276237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5130166786942692061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d657d8e030ae41bfa6ecaa8cb3d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+--- !u!61 &1692382443263053266
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,18 +121,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.003418}
   m_EdgeRadius: 0
---- !u!114 &4766957520285047273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5130166786942692061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e85d657d8e030ae41bfa6ecaa8cb3d88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
