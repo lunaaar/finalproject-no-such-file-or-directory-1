@@ -7306,6 +7306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1028157312}
+  shop: {fileID: 1837127987}
 --- !u!1001 &1059085742
 PrefabInstance:
   m_ObjectHideFlags: 0
