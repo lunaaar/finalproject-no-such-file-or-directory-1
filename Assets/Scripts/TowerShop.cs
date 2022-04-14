@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class TowerShop : MonoBehaviour
@@ -14,22 +15,38 @@ public class TowerShop : MonoBehaviour
     public Tower aavgPrefab;
     public Tower mortonPrefab;
 
+    public int money;
+    public Text moneyText;
+
+    public void Start()
+    {
+        updateMoney(money);
+    }
+
     public void setSelectedToGlass()
     {
-        selectedPrefab = glassDefenderPrefab;
+        if (glassDefenderPrefab.getCost() <= money)
+        {
+            selectedPrefab = glassDefenderPrefab;
+        }
     }
 
     public void createTower(Transform t)
     {
         if (selectedPrefab != null)
         {
-            spawnTower(selectedPrefab, t);
+            if (selectedPrefab.getCost() <= money)
+            {
+                updateMoney(money - selectedPrefab.getCost());
 
-            selectedPrefab = null;
+                spawnTower(selectedPrefab, t);
+
+                selectedPrefab = null;
+            }
         }
     }
 
-    public bool towerSelected()
+    public bool towerSelectable()
     {
         return selectedPrefab != null;
     }
@@ -38,6 +55,12 @@ public class TowerShop : MonoBehaviour
     {
         print("created");
         return Instantiate(tower, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+    }
+
+    private void updateMoney(int newMoney)
+    {
+        money = newMoney;
+        moneyText.text = money.ToString();
     }
 
 }

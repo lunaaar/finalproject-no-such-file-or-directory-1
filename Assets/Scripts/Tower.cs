@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
+    public int cost;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,10 @@ public class Tower : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public int getCost()
+    {
+        return cost;
     }
 }

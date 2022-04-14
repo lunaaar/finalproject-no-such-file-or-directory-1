@@ -12406,9 +12406,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Test, Assembly-CSharp
-        m_MethodName: testing
+      - m_Target: {fileID: 1837127987}
+        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
+        m_MethodName: setSelectedToGlass
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12745,6 +12745,8 @@ MonoBehaviour:
   firewallPrefab: {fileID: 0}
   aavgPrefab: {fileID: 0}
   mortonPrefab: {fileID: 0}
+  money: 10
+  moneyText: {fileID: 1613051884}
 --- !u!1001 &1856026744
 PrefabInstance:
   m_ObjectHideFlags: 0

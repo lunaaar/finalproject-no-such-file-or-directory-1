@@ -18,7 +18,7 @@ public class SelectionManager : MonoBehaviour
             {
                 GameObject go = hit.collider.gameObject;
 
-                if(go.GetComponent<Node>() != null && shop.towerSelected())
+                if(go.GetComponent<Node>() != null && shop.towerSelectable())
                 {
                     Transform t = go.transform;
                     go.SetActive(false);
