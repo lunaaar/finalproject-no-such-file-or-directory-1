@@ -5,8 +5,9 @@ using UnityEngine;
 public class SelectionManager : MonoBehaviour
 {
     public Camera camera;
-
     public TowerShop shop;
+
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -18,17 +19,16 @@ public class SelectionManager : MonoBehaviour
             {
                 GameObject go = hit.collider.gameObject;
 
-                if(go.GetComponent<Node>() != null && shop.towerSelectable())
+                if(go.GetComponent<Node>() != null && shop.TowerSelected())
                 {
                     Transform t = go.transform;
                     go.SetActive(false);
 
-                    shop.createTower(t);
-                    print("hit node");
+                    shop.CreateTower(t);
+
+                    shop.UnselectAll();
                 }
             }
-
         }
     }
-
 }
