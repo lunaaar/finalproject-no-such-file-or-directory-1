@@ -6,7 +6,6 @@ public class Node : MonoBehaviour
 {
     SpriteRenderer sprite;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,4 +22,6 @@ public class Node : MonoBehaviour
     {
         sprite.color = new Color(0.2235294f, 0.4039216f, 0.2392157f, 1);
     }
+
+    
 }

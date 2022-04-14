@@ -7073,6 +7073,7 @@ GameObject:
   - component: {fileID: 1028157313}
   - component: {fileID: 1028157312}
   - component: {fileID: 1028157311}
+  - component: {fileID: 1028157314}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7145,6 +7146,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1028157314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028157310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad99d8c58f0af7443869bb6062ea57a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1028157312}
+  shop: {fileID: 1837127987}
 --- !u!1001 &1059085742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12677,6 +12692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1837127986}
+  - component: {fileID: 1837127987}
   m_Layer: 5
   m_Name: TowerShop
   m_TagString: Untagged
@@ -12710,6 +12726,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1837127987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837127985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f26a91593f2d854cae3f06fd7dc12e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glassDefenderPrefab: {fileID: 690848650357258628, guid: 80128024e33298a49ba57a45a0b41e4b, type: 3}
+  mcFeePrefab: {fileID: 0}
+  vastPrefab: {fileID: 0}
+  byteDefenderPrefab: {fileID: 0}
+  firewallPrefab: {fileID: 0}
+  aavgPrefab: {fileID: 0}
+  mortonPrefab: {fileID: 0}
 --- !u!1001 &1856026744
 PrefabInstance:
   m_ObjectHideFlags: 0
