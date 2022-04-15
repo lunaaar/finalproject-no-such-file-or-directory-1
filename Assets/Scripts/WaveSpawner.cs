@@ -10,6 +10,7 @@ public class WaveSpawner : MonoBehaviour
     public Enemy polymorphicPrefab;
     public Enemy overwritePrefab;
     public Enemy residentPrefab;
+    public Enemy bossPrefab;
 
     private int currentRound;
     public float countdown;
