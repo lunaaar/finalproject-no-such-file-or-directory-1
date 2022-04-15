@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = Waypoints.waypoints[0];
+        target = Waypoints.waypoints[waypointIndex];
     }
 
     // Update is called once per frame
@@ -66,6 +66,12 @@ public class Enemy : MonoBehaviour
     public void loseHealth(int i)
     {
         health -= i;
+    }
+
+    public void setWaypointIndex(int i)
+    {
+        waypointIndex = i;
+        target = Waypoints.waypoints[waypointIndex];
     }
 
 }

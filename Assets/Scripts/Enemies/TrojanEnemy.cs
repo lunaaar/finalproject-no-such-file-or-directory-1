@@ -8,7 +8,8 @@ public class TrojanEnemy : Enemy
 
     public void Spawn()
     {
-        Object.Instantiate(enemy);
+        Enemy go = Instantiate(enemy, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+        go.setWaypointIndex(waypointIndex);
     }
 
     public override void takeDamage(int i)
@@ -21,4 +22,8 @@ public class TrojanEnemy : Enemy
         }
     }
 
+    public void OnMouseEnter()
+    {
+        takeDamage(1);
+    }
 }
