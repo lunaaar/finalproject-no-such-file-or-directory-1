@@ -21,9 +21,4 @@ public class TrojanEnemy : Enemy
             Destroy(gameObject);
         }
     }
-
-    public void OnMouseEnter()
-    {
-        takeDamage(1);
-    }
 }
