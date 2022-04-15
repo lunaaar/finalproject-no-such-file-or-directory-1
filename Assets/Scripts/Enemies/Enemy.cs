@@ -7,9 +7,11 @@ public class Enemy : MonoBehaviour
 {
     public float speed;
 
-    private Transform target;
+    public int health;
 
-    private int waypointIndex = 0;
+    protected Transform target;
+
+    protected int waypointIndex = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,15 @@ public class Enemy : MonoBehaviour
         move();
     }
 
+    public virtual void takeDamage(int i)
+    {
+        health -= i;
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public void move()
     {
         Vector2 dir = target.position - transform.position;
@@ -34,7 +45,8 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void GetNextWaypoint()
+
+    public virtual void GetNextWaypoint()
     {
         if (waypointIndex >= Waypoints.waypoints.Length - 1)
         {
@@ -45,4 +57,15 @@ public class Enemy : MonoBehaviour
         waypointIndex++;
         target = Waypoints.waypoints[waypointIndex];
     }
+
+    public void AddHealth(int i)
+    {
+        health += i;
+    }
+
+    public void loseHealth(int i)
+    {
+        health -= i;
+    }
+
 }
