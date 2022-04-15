@@ -95,4 +95,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337b5849987feed4493702f4647e5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   cost: 10
+  upgradeCost: 5
+  upgradeCostIncreaseAmount: 3
+  range: 3
+  fireRate: 2.5
+  fireRateIncreaseAmount: 0.5
+  damage: 1
+  damageIncreaseAmount: 0.5
+  splash: 0
+  stunDuration: 2.5
+  bullet: {fileID: 7400397736993705702, guid: 367b5e0fbc62aa042b6f0b3d5a759dd6, type: 3}
+  enemyTag: Enemy
