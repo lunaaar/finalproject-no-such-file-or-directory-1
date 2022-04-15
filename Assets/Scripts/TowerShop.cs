@@ -52,6 +52,8 @@ public class TowerShop : MonoBehaviour
 
     private Tower SpawnTower(Tower tower, Transform transform)
     {
+        //UnselectAll();
+        selectedPrefab = null;
         return Instantiate(tower, new Vector2(transform.position.x, transform.position.y), transform.rotation);
     }
 
@@ -65,40 +67,33 @@ public class TowerShop : MonoBehaviour
     {
         foreach(GameObject go in buttons)
         {
-            if (!go.GetComponent<ImageSelection>().WasClicked())
-            {
-                go.GetComponent<ImageSelection>().UnSelect();
-            } 
+            go.GetComponent<ImageSelection>().UnSelect();
+             
         }
     }
 
     public void SelectGlass()
     {
-        if (selectedPrefab == glassDefenderPrefab)
-        {
-            selectedPrefab = null;
-            return;
-        }
-
-        if (glassDefenderPrefab.getCost() <= money)
+        if (glassDefenderPrefab.getCost() <= money && selectedPrefab != glassDefenderPrefab)
         {
             selectedPrefab = glassDefenderPrefab;
             return;
         }
-
-        
+        else
+        {
+            selectedPrefab = null;
+        }
     }
 
     public void SelectMcFee()
     {
 
-        if (mcFeePrefab.getCost() <= money || selectedPrefab == null)
+        if (mcFeePrefab.getCost() <= money && selectedPrefab != mcFeePrefab)
         {
             selectedPrefab = mcFeePrefab;
             return;
-        }
-
-        if (selectedPrefab == mcFeePrefab)
+        } 
+        else
         {
             selectedPrefab = null;
         }
@@ -108,13 +103,12 @@ public class TowerShop : MonoBehaviour
     public void SelectVast()
     {
 
-        if (vastPrefab.getCost() <= money || selectedPrefab == null)
+        if (vastPrefab.getCost() <= money && selectedPrefab != vastPrefab)
         {
             selectedPrefab = vastPrefab;
             return;
         }
-
-        if (selectedPrefab == vastPrefab)
+        else
         {
             selectedPrefab = null;
         }
@@ -123,13 +117,12 @@ public class TowerShop : MonoBehaviour
     public void SelectByte()
     {
 
-        if (byteDefenderPrefab.getCost() <= money || selectedPrefab == null)
+        if (byteDefenderPrefab.getCost() <= money && selectedPrefab != byteDefenderPrefab)
         {
             selectedPrefab = byteDefenderPrefab;
             return;
         }
-
-        if (selectedPrefab == byteDefenderPrefab)
+        else
         {
             selectedPrefab = null;
         }
@@ -138,13 +131,12 @@ public class TowerShop : MonoBehaviour
     public void SelectFirewall()
     {
 
-        if (firewallPrefab.getCost() <= money || selectedPrefab == null)
+        if (firewallPrefab.getCost() <= money && selectedPrefab != firewallPrefab)
         {
             selectedPrefab = firewallPrefab;
             return;
         }
-
-        if (selectedPrefab == firewallPrefab)
+        else
         {
             selectedPrefab = null;
         }
@@ -153,13 +145,12 @@ public class TowerShop : MonoBehaviour
     public void SelectAAVG()
     {
 
-        if (aavgPrefab.getCost() <= money || selectedPrefab == null)
+        if (aavgPrefab.getCost() <= money && selectedPrefab != aavgPrefab)
         {
             selectedPrefab = aavgPrefab;
             return;
         }
-
-        if (selectedPrefab == aavgPrefab)
+        else
         {
             selectedPrefab = null;
         }
@@ -168,13 +159,12 @@ public class TowerShop : MonoBehaviour
     public void SelectMorton()
     {
 
-        if (mortonPrefab.getCost() <= money || selectedPrefab == null)
+        if (mortonPrefab.getCost() <= money && selectedPrefab != mortonPrefab)
         {
             selectedPrefab = mortonPrefab;
             return;
         }
-
-        if (selectedPrefab == mortonPrefab)
+        else
         {
             selectedPrefab = null;
         }

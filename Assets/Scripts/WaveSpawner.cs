@@ -59,4 +59,9 @@ public class WaveSpawner : MonoBehaviour
     {
         return Object.Instantiate(prefab);
     }
+
+    public void ResetRounds()
+    {
+        currentRound = 1;
+    }
 }
