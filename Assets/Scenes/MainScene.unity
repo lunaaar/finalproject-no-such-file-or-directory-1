@@ -11134,11 +11134,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ddosEnemyPrefab: {fileID: 6809466913601276237, guid: 95e7855065a92824ca2c625f79f692da, type: 3}
-  trojanPrefab: {fileID: 0}
-  networkPrefab: {fileID: 0}
-  polymorphicPrefab: {fileID: 0}
-  overwritePrefab: {fileID: 0}
-  residentPrefab: {fileID: 0}
+  trojanPrefab: {fileID: 6519529246160690213, guid: 37d961b88aab8f84588d89cebc02cc57, type: 3}
+  networkPrefab: {fileID: 1808234835627857245, guid: 0cd51233f380aeb44aecaf091769652a, type: 3}
+  polymorphicPrefab: {fileID: -383808490819468734, guid: 24a49618cbd135047b4085f920a16614, type: 3}
+  overwritePrefab: {fileID: 1808234835627857245, guid: 0cd51233f380aeb44aecaf091769652a, type: 3}
+  residentPrefab: {fileID: -7340786710105109276, guid: 8480e7d3ef29ace4ba0a9639c03efc1e, type: 3}
+  bossPrefab: {fileID: 4468659446607538608, guid: e45889b9c1a9b924dae6d0992204bca7, type: 3}
   countdown: 1
   timeBetweenWaves: 5
 --- !u!4 &1633595112
