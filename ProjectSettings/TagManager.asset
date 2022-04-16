@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - ShopButton
   - End
+  - Bullet
   layers:
   - Default
   - TransparentFX

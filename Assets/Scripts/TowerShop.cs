@@ -63,6 +63,12 @@ public class TowerShop : MonoBehaviour
         moneyText.text = money.ToString();
     }
 
+    public void AddMoney(int newAmount)
+    {
+        money += newAmount;
+        moneyText.text = money.ToString();
+    }
+
     public void UnselectAll()
     {
         foreach(GameObject go in buttons)

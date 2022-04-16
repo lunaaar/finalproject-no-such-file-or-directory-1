@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -376185850002370146}
   m_Layer: 3
   m_Name: GlassDefenderBullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

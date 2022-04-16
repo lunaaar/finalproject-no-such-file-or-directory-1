@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
         
     }
 
-    public float getDamage()
+    public int getDamage()
     {
         //float damage = tower.damage;
         return tower.damage;

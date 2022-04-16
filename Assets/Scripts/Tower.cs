@@ -15,8 +15,8 @@ public class Tower : MonoBehaviour
     public float fireRate = 1f;
     public float fireRateIncreaseAmount = 0f;
     private float fireCountdown = 0f;
-    public float damage = 1f;
-    public float damageIncreaseAmount = 0f;
+    public int damage = 1;
+    public int damageIncreaseAmount = 0;
     public float splash = 0f;
     private bool isStunned = false;
     public float stunDuration = 2.5f;
@@ -103,7 +103,7 @@ public class Tower : MonoBehaviour
         fireRate += fireRateIncreaseAmount;
     }
 
-    public void changeDamage(float amount)
+    public void changeDamage(int amount)
     {
         damage -= amount;
     }

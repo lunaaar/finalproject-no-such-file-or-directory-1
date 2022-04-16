@@ -9,9 +9,13 @@ public class Enemy : MonoBehaviour
 
     public int health;
 
+    public int moneyValue;
+
     protected Transform target;
 
     protected int waypointIndex = 0;
+
+    public TowerShop towerShop;
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +76,24 @@ public class Enemy : MonoBehaviour
     {
         waypointIndex = i;
         target = Waypoints.waypoints[waypointIndex];
+    }
+
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Bullet")
+        {
+            takeDamage(collision.GetComponent<Bullet>().getDamage());
+            Debug.Log("TEST");
+            if (health <= 0)
+            {
+                towerShop.AddMoney(moneyValue);
+                
+                Destroy(gameObject);
+                return;
+            }
+            
+        }
     }
 
 }
