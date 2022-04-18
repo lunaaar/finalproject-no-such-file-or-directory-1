@@ -8,10 +8,16 @@ public class GameManager : MonoBehaviour
 {
     static GameManager _instance = null;
 
+    [Header("UI Elements")]
     public GameObject defeatPanel;
     public GameObject victoryPanel;
     public GameObject spawner;
     public Text health;
+
+    [Header("UpgradeMenu")]
+    public GameObject upgradeMenu;
+    public Text upgradeCostText;
+    public Text upgradeCountText;
 
     void Awake()
     {
@@ -26,6 +32,7 @@ public class GameManager : MonoBehaviour
         DefeatPanelOff();
         VictoryPanelOff();
         SpawnerOn();
+        UpgradeMenuOff();
     }
 
     public static GameManager instance()
@@ -63,6 +70,16 @@ public class GameManager : MonoBehaviour
     public void SpawnerOff()
     {
         spawner.SetActive(false);
+    }
+
+    public void UpgradeMenuOn()
+    {
+        upgradeMenu.SetActive(true);
+    }
+
+    public void UpgradeMenuOff()
+    {
+        upgradeMenu.SetActive(false);
     }
 
     public void Restart()

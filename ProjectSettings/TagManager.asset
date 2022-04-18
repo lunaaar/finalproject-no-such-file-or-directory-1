@@ -8,6 +8,7 @@ TagManager:
   - ShopButton
   - End
   - Bullet
+  - Tower
   layers:
   - Default
   - TransparentFX

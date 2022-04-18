@@ -33,9 +33,9 @@ public class TowerShop : MonoBehaviour
     {
         if (selectedPrefab != null)
         {
-            if (selectedPrefab.getCost() <= money)
+            if (selectedPrefab.GetCost() <= money)
             {
-                UpdateMoney(money - selectedPrefab.getCost());
+                UpdateMoney(money - selectedPrefab.GetCost());
 
                 SpawnTower(selectedPrefab, t);
 
@@ -69,6 +69,12 @@ public class TowerShop : MonoBehaviour
         moneyText.text = money.ToString();
     }
 
+    public void SubtractMoney(int subtract)
+    {
+        money -= subtract;
+        moneyText.text = money.ToString();
+    }
+
     public void UnselectAll()
     {
         foreach(GameObject go in buttons)
@@ -80,7 +86,7 @@ public class TowerShop : MonoBehaviour
 
     public void SelectGlass()
     {
-        if (glassDefenderPrefab.getCost() <= money && selectedPrefab != glassDefenderPrefab)
+        if (glassDefenderPrefab.GetCost() <= money && selectedPrefab != glassDefenderPrefab)
         {
             selectedPrefab = glassDefenderPrefab;
             return;
@@ -94,7 +100,7 @@ public class TowerShop : MonoBehaviour
     public void SelectMcFee()
     {
 
-        if (mcFeePrefab.getCost() <= money && selectedPrefab != mcFeePrefab)
+        if (mcFeePrefab.GetCost() <= money && selectedPrefab != mcFeePrefab)
         {
             selectedPrefab = mcFeePrefab;
             return;
@@ -109,7 +115,7 @@ public class TowerShop : MonoBehaviour
     public void SelectVast()
     {
 
-        if (vastPrefab.getCost() <= money && selectedPrefab != vastPrefab)
+        if (vastPrefab.GetCost() <= money && selectedPrefab != vastPrefab)
         {
             selectedPrefab = vastPrefab;
             return;
@@ -123,7 +129,7 @@ public class TowerShop : MonoBehaviour
     public void SelectByte()
     {
 
-        if (byteDefenderPrefab.getCost() <= money && selectedPrefab != byteDefenderPrefab)
+        if (byteDefenderPrefab.GetCost() <= money && selectedPrefab != byteDefenderPrefab)
         {
             selectedPrefab = byteDefenderPrefab;
             return;
@@ -137,7 +143,7 @@ public class TowerShop : MonoBehaviour
     public void SelectFirewall()
     {
 
-        if (firewallPrefab.getCost() <= money && selectedPrefab != firewallPrefab)
+        if (firewallPrefab.GetCost() <= money && selectedPrefab != firewallPrefab)
         {
             selectedPrefab = firewallPrefab;
             return;
@@ -151,7 +157,7 @@ public class TowerShop : MonoBehaviour
     public void SelectAAVG()
     {
 
-        if (aavgPrefab.getCost() <= money && selectedPrefab != aavgPrefab)
+        if (aavgPrefab.GetCost() <= money && selectedPrefab != aavgPrefab)
         {
             selectedPrefab = aavgPrefab;
             return;
@@ -165,7 +171,7 @@ public class TowerShop : MonoBehaviour
     public void SelectMorton()
     {
 
-        if (mortonPrefab.getCost() <= money && selectedPrefab != mortonPrefab)
+        if (mortonPrefab.GetCost() <= money && selectedPrefab != mortonPrefab)
         {
             selectedPrefab = mortonPrefab;
             return;
@@ -174,6 +180,11 @@ public class TowerShop : MonoBehaviour
         {
             selectedPrefab = null;
         }
+    }
+
+    public int GetMoney()
+    {
+        return money;
     }
 
 }

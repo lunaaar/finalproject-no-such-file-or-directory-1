@@ -6,6 +6,7 @@ public class SelectionManager : MonoBehaviour
 {
     public Camera camera;
     public TowerShop shop;
+    public UpgradeMenu menu;
 
 
     void Update()
@@ -27,6 +28,11 @@ public class SelectionManager : MonoBehaviour
                     shop.CreateTower(t);
 
                     shop.UnselectAll();
+                }
+                else if (go.CompareTag("Tower"))
+                {
+                    menu.SetTower(go);
+                    GameManager.instance().UpgradeMenuOn();
                 }
             }
         }

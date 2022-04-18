@@ -7,6 +7,7 @@ public class Tower : MonoBehaviour
     
     public Transform target;
     [Header("Attributes")]
+    public int upgradeCount = 0;
     public int cost = 10;
     public int upgradeCost = 15;
     public int upgradeCostIncreaseAmount = 0;
@@ -98,6 +99,7 @@ public class Tower : MonoBehaviour
 
     public void upgrade()
     {
+        upgradeCount += 1;
         upgradeCost += upgradeCostIncreaseAmount;
         damage += damageIncreaseAmount;
         fireRate += fireRateIncreaseAmount;
@@ -120,14 +122,24 @@ public class Tower : MonoBehaviour
         return isStunned;
     }
 
-    public int getCost()
+    public int GetCost()
     {
         return cost;
     }
 
-    public float getDamage()
+    public float GetDamage()
     {
         return damage;
+    }
+
+    public int GetUpgradeCount()
+    {
+        return upgradeCount;
+    }
+
+    public int GetUpgradeCost()
+    {
+        return upgradeCost;
     }
     
     // Shows range when Gizmos is turned on
