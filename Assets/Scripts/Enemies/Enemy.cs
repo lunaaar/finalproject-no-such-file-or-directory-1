@@ -8,7 +8,9 @@ public class Enemy : MonoBehaviour
 {
     public float speed;
 
-    public int health;
+    public int currentHealth;
+
+    public int maxHealth;
 
     public int moneyValue;
 
@@ -33,8 +35,8 @@ public class Enemy : MonoBehaviour
 
     public virtual void takeDamage(int i)
     {
-        health -= i;
-        if (health <= 0)
+        currentHealth -= i;
+        if (currentHealth <= 0)
         {
             towerShop.AddMoney(moneyValue);
             AudioManager.instance().Play("EnemyDeath");
@@ -69,12 +71,12 @@ public class Enemy : MonoBehaviour
 
     public void AddHealth(int i)
     {
-        health += i;
+        currentHealth += i;
     }
 
     public void loseHealth(int i)
     {
-        health -= i;
+        currentHealth -= i;
     }
 
     public void setWaypointIndex(int i)
@@ -100,5 +102,23 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public int getMaxHealth()
+    {
+        return maxHealth;
+    }
 
+    public int getCurrentHealth()
+    {
+        return currentHealth;
+    }
+
+    public bool IsOverMaxHealth()
+    {
+        return currentHealth > maxHealth;
+    }
+
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+    }
 }

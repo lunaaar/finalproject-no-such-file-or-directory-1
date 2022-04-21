@@ -14,8 +14,8 @@ public class TrojanEnemy : Enemy
 
     public override void takeDamage(int i)
     {
-        health -= i;
-        if(health <= 0)
+        currentHealth -= i;
+        if(currentHealth <= 0)
         {
             Spawn();
             Destroy(gameObject);

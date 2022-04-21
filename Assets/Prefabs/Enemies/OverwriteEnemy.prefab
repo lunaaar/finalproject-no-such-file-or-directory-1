@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  health: 10
+  currentHealth: 4
+  maxHealth: 4
   moneyValue: 5
   towerShop: {fileID: 0}
 --- !u!61 &9076996195520198451

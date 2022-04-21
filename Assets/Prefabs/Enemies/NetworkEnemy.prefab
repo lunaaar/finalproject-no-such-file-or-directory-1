@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  health: 1
+  currentHealth: 2
+  maxHealth: 2
   moneyValue: 2
   towerShop: {fileID: 0}
   respawnObject: {fileID: 6519529246160690213}

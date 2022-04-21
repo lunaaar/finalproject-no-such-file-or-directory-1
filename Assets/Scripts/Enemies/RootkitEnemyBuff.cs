@@ -5,11 +5,13 @@ using UnityEngine;
 public class RootkitEnemyBuff : MonoBehaviour
 {
 
+    private GameObject[] buffedEnemies;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Enemy")
         {
-            collision.GetComponent<Enemy>().AddHealth(10);
+            collision.GetComponent<Enemy>().AddHealth(50);
         }
     }
 
@@ -17,9 +19,11 @@ public class RootkitEnemyBuff : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            collision.GetComponent<Enemy>().AddHealth(10);
+            if (collision.GetComponent<Enemy>().IsOverMaxHealth())
+            {
+                collision.GetComponent<Enemy>().ResetHealth();
+            }
         }
-
     }
     
 }

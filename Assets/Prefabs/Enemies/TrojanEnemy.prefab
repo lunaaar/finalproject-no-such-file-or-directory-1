@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  health: 1
+  currentHealth: 3
+  maxHealth: 3
   moneyValue: 3
   towerShop: {fileID: 0}
   enemy: {fileID: 6068434674859075280, guid: 4cd48457688cc68409a943c532140b10, type: 3}

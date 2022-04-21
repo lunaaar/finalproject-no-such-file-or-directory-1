@@ -6,8 +6,8 @@ public class OverwriteEnemy : Enemy
 {
     public override void takeDamage(int i)
     {
-        health -= i;
-        if (health <= 0)
+        currentHealth -= i;
+        if (currentHealth <= 0)
         {
             /*
              * Code for stunning towers probably by increasing attack intervals
