@@ -19654,7 +19654,7 @@ MonoBehaviour:
   byteDefenderPrefab: {fileID: 2064677003595107063, guid: 890ba400d1f093c419786e1803d4b188, type: 3}
   firewallPrefab: {fileID: 7303846516134916252, guid: 9d4a03bae8f6cd747b7a716e0f6a4714, type: 3}
   aavgPrefab: {fileID: 1572442659379325427, guid: 714dc76f91602bb4eb9d2631176dc39e, type: 3}
-  mortonPrefab: {fileID: 4856024176330640233, guid: b805f4fa513fef14a90ae78383409c76, type: 3}
+  mortonPrefab: {fileID: -8669920843438750908, guid: b805f4fa513fef14a90ae78383409c76, type: 3}
   money: 50
   moneyText: {fileID: 1613051884}
 --- !u!1001 &1856026744

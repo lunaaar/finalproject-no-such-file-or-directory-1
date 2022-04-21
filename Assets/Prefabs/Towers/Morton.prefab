@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7261797186802348820}
   - component: {fileID: 2901068815608572452}
-  - component: {fileID: 4856024176330640233}
+  - component: {fileID: -8669920843438750908}
   - component: {fileID: -3503677334070625265}
   m_Layer: 0
   m_Name: Morton
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4856024176330640233
+--- !u!114 &-8669920843438750908
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,22 +93,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 8685411255852584948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 337b5849987feed4493702f4647e5948, type: 3}
+  m_Script: {fileID: 11500000, guid: 33cc056db959d9645a8cefdf08275c16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   upgradeCount: 0
   cost: 40
-  upgradeCost: 15
-  upgradeCostIncreaseAmount: 0
+  upgradeCost: 30
+  upgradeCostIncreaseAmount: 15
   range: 3
-  fireRate: 1
+  fireRate: 0.25
   fireRateIncreaseAmount: 0
-  damage: 1
-  damageIncreaseAmount: 0
-  splash: 0
+  damage: 4
+  damageIncreaseAmount: 2
   stunDuration: 2.5
-  bullet: {fileID: 8743574313977087241, guid: bd2378eecb8de144791126348b511f7e, type: 3}
+  bullet: {fileID: 5574176961572739293, guid: dcf87f05da0b70d43953909ac544fffc, type: 3}
   enemyTag: Enemy
 --- !u!61 &-3503677334070625265
 BoxCollider2D:

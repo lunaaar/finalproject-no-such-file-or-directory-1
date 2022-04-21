@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 932677675312396246}
   - component: {fileID: 5133541385603516662}
   - component: {fileID: 2675834207255454436}
+  - component: {fileID: -8582391299227006330}
   m_Layer: 0
   m_Name: ByteDefenderMinion
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,3 +147,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8582391299227006330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4278771262840608603}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16fe7d66c6375d14cb055196349c8783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tower: {fileID: 4886061606991441201, guid: 890ba400d1f093c419786e1803d4b188, type: 3}

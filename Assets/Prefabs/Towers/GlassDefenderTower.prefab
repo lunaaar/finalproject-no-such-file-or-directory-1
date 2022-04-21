@@ -103,11 +103,10 @@ MonoBehaviour:
   upgradeCost: 5
   upgradeCostIncreaseAmount: 3
   range: 3
-  fireRate: 2.5
-  fireRateIncreaseAmount: 0.5
+  fireRate: 1.5
+  fireRateIncreaseAmount: 0.25
   damage: 1
-  damageIncreaseAmount: 0
-  splash: 0
+  damageIncreaseAmount: 1
   stunDuration: 2.5
   bullet: {fileID: 7400397736993705702, guid: 367b5e0fbc62aa042b6f0b3d5a759dd6, type: 3}
   enemyTag: Enemy
