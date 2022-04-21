@@ -26,7 +26,6 @@ public class ByteDefenderBullet : MonoBehaviour {
 
         if (health <= 0)
         {
-            towerScript.reduceBulletCount();
             Destroy(gameObject);
             return;
         }

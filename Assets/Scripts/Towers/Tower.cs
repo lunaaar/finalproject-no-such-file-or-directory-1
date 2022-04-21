@@ -60,6 +60,15 @@ public class Tower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        fireCountdown -= Time.deltaTime;
+        stunTimer -= Time.deltaTime;
+
+        if (stunTimer <= 0)
+        {
+            isStunned = false;
+        }
+        
         if (!isStunned)
         {
 
@@ -82,19 +91,11 @@ public class Tower : MonoBehaviour
             }
 
         }
-
-        fireCountdown -= Time.deltaTime;
-        stunTimer -= Time.deltaTime;
-
-        if (stunTimer <= 0)
-        {
-            isStunned = false;
-        }
     }
 
     public virtual void shoot()
     {
-        Instantiate(bullet, new Vector3(transform.position.x, transform.position.y, -1f), this.transform.rotation);
+        Instantiate(bullet, new Vector3(transform.position.x, transform.position.y, 0f), this.transform.rotation);
     }
 
     public virtual void upgrade()

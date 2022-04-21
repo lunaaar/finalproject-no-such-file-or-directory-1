@@ -89,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8732353862675564079, guid: 367b5e0fbc62aa042b6f0b3d5a759dd6, type: 3}
       propertyPath: ShapeModule.m_Rotation.x
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 8732353862675564079, guid: 367b5e0fbc62aa042b6f0b3d5a759dd6, type: 3}
       propertyPath: ShapeModule.radiusThickness

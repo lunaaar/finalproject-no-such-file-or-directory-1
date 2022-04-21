@@ -8,14 +8,17 @@ public class ByteDefenderTower : Tower
     private int bulletCount = 0;
     public int bulletHealth;
 
+    //private List<GameObject> test = new List<GameObject>(10);
+
    public override void shoot()
    {
-       if (bulletCount < bulletMax)
-       {
-       Instantiate(bullet, new Vector3(transform.position.x-1f, transform.position.y, -1f), this.transform.rotation);
-       bulletCount += 1;
-       Debug.Log("Minion count: " + bulletCount);
-       }
+       
+       //if (test.Count < bulletMax)
+       //{
+        Instantiate(bullet, target.position, Quaternion.identity);
+        //bulletCount += 1;
+        //Debug.Log("Minion count: " + test.Count);
+       //}
    }
 
    public override void upgrade()
@@ -35,7 +38,7 @@ public class ByteDefenderTower : Tower
    public void reduceBulletCount()
    {
        bulletCount -= 1;
-       Debug.Log("Minion Died");
-       Debug.Log("Minion count: " + bulletCount);
+      // Debug.Log("Minion Died");
+      // Debug.Log("Minion count: " + bulletCount);
    }
 }
