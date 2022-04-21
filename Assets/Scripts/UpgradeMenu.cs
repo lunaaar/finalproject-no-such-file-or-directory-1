@@ -12,7 +12,6 @@ public class UpgradeMenu : MonoBehaviour
     public Text upgradeCostText;
     public Text upgradeCountText;
 
-
     public void setText()
     {
         upgradeCountText.text = "Upgrade Count: " + tower.GetComponent<Tower>().GetUpgradeCount();

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SelectionManager : MonoBehaviour
 {
-    public Camera camera;
     public TowerShop shop;
     public UpgradeMenu menu;
 
@@ -16,7 +15,7 @@ public class SelectionManager : MonoBehaviour
             RaycastHit2D hit;
 
 
-            if (hit = Physics2D.Raycast(camera.ScreenToWorldPoint(Input.mousePosition), Vector2.zero))
+            if (hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero))
             {
                 GameObject go = hit.collider.gameObject;
 
@@ -32,6 +31,7 @@ public class SelectionManager : MonoBehaviour
                 else if (go.CompareTag("Tower"))
                 {
                     menu.SetTower(go);
+                    menu.setText();
                     GameManager.instance().UpgradeMenuOn();
                 }
             }

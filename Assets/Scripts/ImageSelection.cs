@@ -12,7 +12,7 @@ public class ImageSelection : MonoBehaviour
     private bool clicked;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         image = GetComponent<UnityEngine.UI.Image>();
         clicked = false;
