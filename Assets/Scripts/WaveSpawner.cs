@@ -14,6 +14,9 @@ public class WaveSpawner : MonoBehaviour
     public Enemy residentPrefab;
     public Enemy bossPrefab;
 
+    [Header("Tower Reference")]
+    public TowerShop towerShop;
+
     [Header("Round Information")]
     private int currentRound;
     public float countdown;
@@ -123,7 +126,11 @@ public class WaveSpawner : MonoBehaviour
 
     private Enemy spawn(Enemy prefab)
     {
-        return Object.Instantiate(prefab);
+        
+        Enemy g = Object.Instantiate(prefab);
+        g.towerShop = towerShop;
+
+        return g;
     }
 
     public void ResetRounds()

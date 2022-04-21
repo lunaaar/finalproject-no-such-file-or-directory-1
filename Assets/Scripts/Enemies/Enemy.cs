@@ -89,7 +89,6 @@ public class Enemy : MonoBehaviour
         if (collision.tag == "Bullet")
         {
             takeDamage(collision.GetComponent<Bullet>().getDamage());
-            Debug.Log("TEST");
         }
     }
 
@@ -97,16 +96,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.tag == "Bullet")
         {
-            takeDamage(collision.GetComponent<Bullet>().getDamage());
-            Debug.Log("TEST");
-            if (health <= 0)
-            {
-                towerShop.AddMoney(moneyValue);
-                
-                Destroy(gameObject);
-                return;
-            }
-            
+            takeDamage(collision.GetComponent<Bullet>().getDamage()); 
         }
     }
 
