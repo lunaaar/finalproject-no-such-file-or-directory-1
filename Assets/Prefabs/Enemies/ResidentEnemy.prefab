@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -7340786710105109276}
   - component: {fileID: 5885056255417517791}
   - component: {fileID: -8222692909418814224}
+  - component: {fileID: -4550045353932979738}
   m_Layer: 0
   m_Name: ResidentEnemy
   m_TagString: Enemy
@@ -97,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f189623e6d00f745ab948be0769c37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 2.5
   health: 3
   moneyValue: 0
   towerShop: {fileID: 0}
@@ -111,7 +112,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -148,3 +149,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &-4550045353932979738
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2166212908311465482}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.003418}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.003418}
+  m_EdgeRadius: 0

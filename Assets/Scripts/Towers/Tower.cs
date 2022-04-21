@@ -77,7 +77,7 @@ public class Tower : MonoBehaviour
 
             if (fireCountdown <= 0f)
             {
-                Shoot();
+                shoot();
                 fireCountdown = 1f/ fireRate;
             }
 
@@ -92,12 +92,12 @@ public class Tower : MonoBehaviour
         }
     }
 
-    void Shoot()
+    public virtual void shoot()
     {
         Instantiate(bullet, new Vector3(transform.position.x, transform.position.y, -1f), this.transform.rotation);
     }
 
-    public void upgrade()
+    public virtual void upgrade()
     {
         upgradeCount += 1;
         upgradeCost += upgradeCostIncreaseAmount;
@@ -127,7 +127,7 @@ public class Tower : MonoBehaviour
         return cost;
     }
 
-    public float GetDamage()
+    public int GetDamage()
     {
         return damage;
     }

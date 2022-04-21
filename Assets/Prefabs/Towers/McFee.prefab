@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  upgradeCount: 0
   cost: 15
   upgradeCost: 15
   upgradeCostIncreaseAmount: 0
@@ -107,7 +108,7 @@ MonoBehaviour:
   damageIncreaseAmount: 0
   splash: 0
   stunDuration: 2.5
-  bullet: {fileID: 0}
+  bullet: {fileID: 6431798811820903683, guid: eff3b31576653954389fed28c963644c, type: 3}
   enemyTag: Enemy
 --- !u!61 &7425903593033194593
 BoxCollider2D:
@@ -119,7 +120,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

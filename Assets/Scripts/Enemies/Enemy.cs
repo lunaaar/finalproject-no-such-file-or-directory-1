@@ -92,4 +92,23 @@ public class Enemy : MonoBehaviour
             Debug.Log("TEST");
         }
     }
+
+    public void OnParticleCollision(GameObject collision)
+    {
+        if (collision.tag == "Bullet")
+        {
+            takeDamage(collision.GetComponent<Bullet>().getDamage());
+            Debug.Log("TEST");
+            if (health <= 0)
+            {
+                towerShop.AddMoney(moneyValue);
+                
+                Destroy(gameObject);
+                return;
+            }
+            
+        }
+    }
+
+
 }
