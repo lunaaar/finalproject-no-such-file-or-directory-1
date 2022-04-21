@@ -99,6 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   health: 1
+  moneyValue: 0
+  towerShop: {fileID: 0}
   respawnObject: {fileID: 6519529246160690213}
 --- !u!61 &-1519067778160133912
 BoxCollider2D:

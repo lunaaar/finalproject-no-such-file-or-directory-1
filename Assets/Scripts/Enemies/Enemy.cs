@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
+
 public class Enemy : MonoBehaviour
 {
     public float speed;
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour
     protected int waypointIndex = 0;
 
     public TowerShop towerShop;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +34,12 @@ public class Enemy : MonoBehaviour
     public virtual void takeDamage(int i)
     {
         health -= i;
-        if(health <= 0)
+        if (health <= 0)
         {
+            towerShop.AddMoney(moneyValue);
+            AudioManager.instance().Play("EnemyDeath");
             Destroy(gameObject);
+            return;
         }
     }
 
@@ -85,15 +90,6 @@ public class Enemy : MonoBehaviour
         {
             takeDamage(collision.GetComponent<Bullet>().getDamage());
             Debug.Log("TEST");
-            if (health <= 0)
-            {
-                towerShop.AddMoney(moneyValue);
-                
-                Destroy(gameObject);
-                return;
-            }
-            
         }
     }
-
 }

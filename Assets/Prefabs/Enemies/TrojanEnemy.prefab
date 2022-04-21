@@ -99,6 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   health: 1
+  moneyValue: 0
+  towerShop: {fileID: 0}
   enemy: {fileID: 6809466913601276237, guid: 95e7855065a92824ca2c625f79f692da, type: 3}
 --- !u!61 &-2134180797214101498
 BoxCollider2D:

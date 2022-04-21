@@ -99,6 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   health: 10
+  moneyValue: 0
+  towerShop: {fileID: 0}
 --- !u!61 &9076996195520198451
 BoxCollider2D:
   m_ObjectHideFlags: 0

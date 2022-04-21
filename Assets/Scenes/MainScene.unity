@@ -8131,6 +8131,7 @@ GameObject:
   - component: {fileID: 1028157311}
   - component: {fileID: 1028157314}
   - component: {fileID: 1028157315}
+  - component: {fileID: 1028157316}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8237,6 +8238,23 @@ MonoBehaviour:
   upgradeMenu: {fileID: 649183738}
   upgradeCostText: {fileID: 384607012}
   upgradeCountText: {fileID: 1576075248}
+--- !u!114 &1028157316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028157310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9076eb4d6441ec4abd815a0ad60cc8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: EnemyDeath
+    clip: {fileID: 8300000, guid: bf00af16d18213648a1ce063b9608156, type: 3}
+    volume: 0.33
+    pitch: 1.6
 --- !u!1001 &1059085742
 PrefabInstance:
   m_ObjectHideFlags: 0
