@@ -680,18 +680,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1837127987}
         m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
-        m_MethodName: SelectMorton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1837127987}
-        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
         m_MethodName: UnselectAll
         m_Mode: 1
         m_Arguments:
@@ -705,6 +693,18 @@ MonoBehaviour:
       - m_Target: {fileID: 58976852}
         m_TargetAssemblyTypeName: ImageSelection, Assembly-CSharp
         m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1837127987}
+        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
+        m_MethodName: SelectMorton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4968,18 +4968,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1837127987}
         m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
-        m_MethodName: SelectFirewall
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1837127987}
-        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
         m_MethodName: UnselectAll
         m_Mode: 1
         m_Arguments:
@@ -4993,6 +4981,18 @@ MonoBehaviour:
       - m_Target: {fileID: 652447935}
         m_TargetAssemblyTypeName: ImageSelection, Assembly-CSharp
         m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1837127987}
+        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
+        m_MethodName: SelectFirewall
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6836,18 +6836,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1837127987}
         m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
-        m_MethodName: SelectMcFee
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1837127987}
-        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
         m_MethodName: UnselectAll
         m_Mode: 1
         m_Arguments:
@@ -6861,6 +6849,18 @@ MonoBehaviour:
       - m_Target: {fileID: 840015352}
         m_TargetAssemblyTypeName: ImageSelection, Assembly-CSharp
         m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1837127987}
+        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
+        m_MethodName: SelectMcFee
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8222,7 +8222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad99d8c58f0af7443869bb6062ea57a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 1028157312}
   shop: {fileID: 1837127987}
   menu: {fileID: 649183742}
 --- !u!114 &1028157315
@@ -19224,18 +19223,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1837127987}
         m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
-        m_MethodName: SelectGlass
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1837127987}
-        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
         m_MethodName: UnselectAll
         m_Mode: 1
         m_Arguments:
@@ -19249,6 +19236,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1781641975}
         m_TargetAssemblyTypeName: ImageSelection, Assembly-CSharp
         m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1837127987}
+        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
+        m_MethodName: SelectGlass
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19599,7 +19598,6 @@ MonoBehaviour:
   firewallPrefab: {fileID: 7303846516134916252, guid: 9d4a03bae8f6cd747b7a716e0f6a4714, type: 3}
   aavgPrefab: {fileID: 1572442659379325427, guid: 714dc76f91602bb4eb9d2631176dc39e, type: 3}
   mortonPrefab: {fileID: 4856024176330640233, guid: b805f4fa513fef14a90ae78383409c76, type: 3}
-  buttons: []
   money: 50
   moneyText: {fileID: 1613051884}
 --- !u!1001 &1856026744
@@ -20111,18 +20109,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1837127987}
         m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
-        m_MethodName: SelectAAVG
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1837127987}
-        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
         m_MethodName: UnselectAll
         m_Mode: 1
         m_Arguments:
@@ -20136,6 +20122,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1907864458}
         m_TargetAssemblyTypeName: ImageSelection, Assembly-CSharp
         m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1837127987}
+        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
+        m_MethodName: SelectAAVG
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20468,18 +20466,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1837127987}
         m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
-        m_MethodName: SelectByte
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1837127987}
-        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
         m_MethodName: UnselectAll
         m_Mode: 1
         m_Arguments:
@@ -20493,6 +20479,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1945137820}
         m_TargetAssemblyTypeName: ImageSelection, Assembly-CSharp
         m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1837127987}
+        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
+        m_MethodName: SelectByte
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21346,18 +21344,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1837127987}
         m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
-        m_MethodName: SelectVast
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1837127987}
-        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
         m_MethodName: UnselectAll
         m_Mode: 1
         m_Arguments:
@@ -21371,6 +21357,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2035318216}
         m_TargetAssemblyTypeName: ImageSelection, Assembly-CSharp
         m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1837127987}
+        m_TargetAssemblyTypeName: TowerShop, Assembly-CSharp
+        m_MethodName: SelectVast
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

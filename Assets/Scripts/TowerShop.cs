@@ -7,6 +7,7 @@ public class TowerShop : MonoBehaviour
 {
     private Tower selectedPrefab;
 
+    [Header("Enemy Prefabs")]
     public Tower glassDefenderPrefab;
     public Tower mcFeePrefab;
     public Tower vastPrefab;
@@ -15,9 +16,9 @@ public class TowerShop : MonoBehaviour
     public Tower aavgPrefab;
     public Tower mortonPrefab;
 
-    public GameObject[] buttons;
+    private GameObject[] buttons;
 
-
+    [Header("Money")]
     public int money;
     public Text moneyText;
 
@@ -45,7 +46,7 @@ public class TowerShop : MonoBehaviour
     }
 
 
-    public bool TowerSelected()
+    public bool WasTowerSelected()
     {
         return selectedPrefab != null;
     }
@@ -94,6 +95,7 @@ public class TowerShop : MonoBehaviour
         else
         {
             selectedPrefab = null;
+            UnselectAll();
         }
     }
 
@@ -108,6 +110,7 @@ public class TowerShop : MonoBehaviour
         else
         {
             selectedPrefab = null;
+            UnselectAll();
         }
     }
 
@@ -123,6 +126,7 @@ public class TowerShop : MonoBehaviour
         else
         {
             selectedPrefab = null;
+            UnselectAll();
         }
     }
 
@@ -137,6 +141,7 @@ public class TowerShop : MonoBehaviour
         else
         {
             selectedPrefab = null;
+            UnselectAll();
         }
     }
 
@@ -151,6 +156,7 @@ public class TowerShop : MonoBehaviour
         else
         {
             selectedPrefab = null;
+            UnselectAll();
         }
     }
 
@@ -165,6 +171,7 @@ public class TowerShop : MonoBehaviour
         else
         {
             selectedPrefab = null;
+            UnselectAll();
         }
     }
 
@@ -179,6 +186,7 @@ public class TowerShop : MonoBehaviour
         else
         {
             selectedPrefab = null;
+            UnselectAll();
         }
     }
 
