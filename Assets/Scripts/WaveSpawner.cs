@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
+    [Header("Enemy Prefabs")]
     public Enemy ddosEnemyPrefab;
     public Enemy trojanPrefab;
     public Enemy networkPrefab;
@@ -13,11 +14,15 @@ public class WaveSpawner : MonoBehaviour
     public Enemy residentPrefab;
     public Enemy bossPrefab;
 
+    [Header("Round Information")]
     private int currentRound;
     public float countdown;
     public float timeBetweenWaves;
 
+    [Header("Round UI")]
     public Text roundText;
+    public GameObject roundButton;
+    private bool selectable;
 
     public WaveSpawner(Enemy d, Enemy t, Enemy n, Enemy p, Enemy o, Enemy r)
     {
@@ -29,25 +34,33 @@ public class WaveSpawner : MonoBehaviour
         residentPrefab = r;
     }
 
-    private void Awake()
+    private void Start()
     {
         currentRound = 1;
+        roundButton.GetComponent<ImageSelection>().Select();
+        selectable = false;
     }
 
     void Update()
     {
 
         countdown -= Time.deltaTime;
+        if (countdown <= 0 && !selectable)
+        {
+            roundButton.GetComponent<ImageSelection>().Select();
+            selectable = true;
+        }
     }
 
     public void callWave()
     {
-        if (countdown <= 0)
+        if (countdown <= 0 && selectable)
         {
             countdown = timeBetweenWaves;
             StartCoroutine(spawnWave());
+            roundButton.GetComponent<ImageSelection>().Select();
+            selectable = false;
         }
-        
     }
 
     IEnumerator spawnWave()
