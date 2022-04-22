@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public GameObject tower;
     private Tower towerScript;
-    private int damage;
+    private float damage;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
         damage = towerScript.GetDamage();
     }
 
-    public int getDamage()
+    public float getDamage()
     {
         //float damage = tower.damage;
         return damage;

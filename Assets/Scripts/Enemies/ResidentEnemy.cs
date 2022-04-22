@@ -8,11 +8,13 @@ public class ResidentEnemy : Enemy
     {
         if (waypointIndex >= Waypoints.waypoints.Length - 1)
         {
-            GameObject[] go = GameObject.FindGameObjectsWithTag("Enemy");
+            GameObject[] go = GameObject.FindGameObjectsWithTag("Tower");
             foreach(GameObject g in go)
             {
                 //alter parameters of all towers
                 //need towers to continue
+
+                g.GetComponent<Tower>().DecreaseDamage(0.1f);
             }
 
             Destroy(gameObject);

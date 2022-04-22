@@ -12,9 +12,9 @@ public class TrojanEnemy : Enemy
         go.setWaypointIndex(waypointIndex);
     }
 
-    public override void takeDamage(int i)
+    public override void takeDamage(float i)
     {
-        currentHealth -= i;
+        currentHealth = currentHealth - i;
         if(currentHealth <= 0)
         {
             Spawn();

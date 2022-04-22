@@ -16,7 +16,7 @@ public class Tower : MonoBehaviour
     public float fireRate = 1f;
     public float fireRateIncreaseAmount = 0f;
     private float fireCountdown = 0f;
-    public int damage = 1;
+    public float damage = 1;
     public int damageIncreaseAmount = 0;
     private bool isStunned = false;
     public float stunDuration = 2.5f;
@@ -127,7 +127,7 @@ public class Tower : MonoBehaviour
         return cost;
     }
 
-    public int GetDamage()
+    public float GetDamage()
     {
         return damage;
     }
@@ -146,5 +146,15 @@ public class Tower : MonoBehaviour
     void OnDrawGizmosSelected () {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
+    }
+
+    public void IncreaseInterval(float f)
+    {
+        fireCountdown += f;
+    }
+
+    public void DecreaseDamage(float f)
+    {
+        damage -= f;
     }
 }

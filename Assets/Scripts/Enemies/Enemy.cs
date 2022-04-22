@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
 {
     public float speed;
 
-    public int currentHealth;
+    public float currentHealth;
 
     public int maxHealth;
 
@@ -33,9 +33,9 @@ public class Enemy : MonoBehaviour
         move();
     }
 
-    public virtual void takeDamage(int i)
+    public virtual void takeDamage(float i)
     {
-        currentHealth -= i;
+        currentHealth = currentHealth - i;
         if (currentHealth <= 0)
         {
             towerShop.AddMoney(moneyValue);
@@ -107,7 +107,7 @@ public class Enemy : MonoBehaviour
         return maxHealth;
     }
 
-    public int getCurrentHealth()
+    public float getCurrentHealth()
     {
         return currentHealth;
     }
@@ -120,5 +120,10 @@ public class Enemy : MonoBehaviour
     public void ResetHealth()
     {
         currentHealth = maxHealth;
+    }
+
+    public void OnMouseEnter()
+    {
+        takeDamage(30f);
     }
 }

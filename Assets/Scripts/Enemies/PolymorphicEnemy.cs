@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PolymorphicEnemy : Enemy
 {
-    public override void takeDamage(int i)
+    public override void takeDamage(float i)
     {
-        currentHealth -= i;
+        currentHealth = currentHealth - i;
         if(speed < 20)
         {
             speed += 3;

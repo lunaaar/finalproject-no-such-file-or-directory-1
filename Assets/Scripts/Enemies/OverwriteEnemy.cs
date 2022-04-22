@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class OverwriteEnemy : Enemy
 {
-    public override void takeDamage(int i)
+    public override void takeDamage(float i)
     {
-        currentHealth -= i;
+        currentHealth = currentHealth - i;
         if (currentHealth <= 0)
         {
-            /*
-             * Code for stunning towers probably by increasing attack intervals
-             * 
-             * Require towers to complete
-             * 
-             */
+            GameObject[] go = GameObject.FindGameObjectsWithTag("Tower");
+            int random = Random.Range(0, go.Length);
+
+            go[random].GetComponent<Tower>().IncreaseInterval(10f);
 
 
             Destroy(gameObject);
