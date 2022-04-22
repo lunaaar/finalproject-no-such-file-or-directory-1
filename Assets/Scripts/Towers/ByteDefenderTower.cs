@@ -28,6 +28,7 @@ public class ByteDefenderTower : Tower
         damage += damageIncreaseAmount;
         fireRate += fireRateIncreaseAmount;
         bulletMax += 1;
+        bulletHealth += 1;
    }
 
    public int getBulletHealth()

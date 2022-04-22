@@ -100,13 +100,12 @@ MonoBehaviour:
   upgradeCount: 0
   cost: 30
   upgradeCost: 15
-  upgradeCostIncreaseAmount: 0
+  upgradeCostIncreaseAmount: 7
   range: 1.8
-  fireRate: 1
+  fireRate: 0.5
   fireRateIncreaseAmount: 0
-  damage: 1
-  damageIncreaseAmount: 0
-  splash: 0
+  damage: 2
+  damageIncreaseAmount: 1
   stunDuration: 2.5
   bullet: {fileID: 3840315711378690863, guid: 07bac40ecac061243ad001655ac9b3c4, type: 3}
   enemyTag: Enemy

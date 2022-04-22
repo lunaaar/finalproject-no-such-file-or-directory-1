@@ -18,7 +18,6 @@ public class Tower : MonoBehaviour
     private float fireCountdown = 0f;
     public int damage = 1;
     public int damageIncreaseAmount = 0;
-    public float splash = 0f;
     private bool isStunned = false;
     public float stunDuration = 2.5f;
     private float stunTimer = 0f;
@@ -68,7 +67,7 @@ public class Tower : MonoBehaviour
         {
             isStunned = false;
         }
-        
+
         if (!isStunned)
         {
 
